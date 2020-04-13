@@ -12,7 +12,7 @@
   <div class="calc-container">
     <!-- Header Bar  -->
     <div class="header">
-      <span class="time">11:23</span>
+      <span class="time"></span>
       <ul class="system-icons">
         <li class="icon-item">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M17 4h3v16h-3V4zM5 14h3v6H5v-6zm6-5h3v11h-3V9z"/></svg>
@@ -27,11 +27,11 @@
       </div>
       <!-- Display -->
       <div class="display-container">
-        <div class="btn__pressed">
-          400 + 200 =
+        <div class="previous-operand">
+          
         </div>
-        <div class="result">
-          600
+        <div class="current-operand">
+          
         </div>
       </div>
 
@@ -40,33 +40,33 @@
       <div class="btn-container">
 
         <!-- First Row -->
-        <div class="btn btn__special btn__operation">C</div>
-        <div class="btn btn__special btn__operation">
+        <button data-all-clear class="btn btn__special btn__operation">C</button>
+        <button data-delete class="btn btn__special btn__operation">
         	<svg class="icon__backspace" width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z"/></svg>
-        </div>
-        <div class="btn btn__special btn__operation">&divide</div>
-        <div class="btn btn__special btn__operation">&times</div>
+        </button>
+        <button data-operation class="btn btn__special btn__operation">&divide</button>
+        <button data-operation class="btn btn__special btn__operation">&times</button>
 
         <!-- Second Row -->
-        <div class="btn btn__number">7</div>
-        <div class="btn btn__number">8</div>
-        <div class="btn btn__number">9</div>
-        <div class="btn btn__special btn__operation">-</div>
+        <button data-number class="btn btn__number">7</button>
+        <button data-number class="btn btn__number">8</button>
+        <button data-number class="btn btn__number">9</button>
+        <button data-operation class="btn btn__special btn__operation">-</button>
         <!-- Third Row -->
-        <div class="btn btn__number">4</div>
-        <div class="btn btn__number">5</div>
-        <div class="btn btn__number">6</div>
-        <div class="btn btn__special btn__operation">+</div>
+        <button data-number class="btn btn__number">4</button>
+        <button data-number class="btn btn__number">5</button>
+        <button data-number class="btn btn__number">6</button>
+        <button data-operation class="btn btn__special btn__operation">+</button>
 
         <!-- Fourth Row -->
-        <div class="btn btn__number">1</div>
-        <div class="btn btn__number">2</div>
-        <div class="btn btn__number">3</div>
-        <div class="btn btn__special btn__operation btn__equal">=</div>
+        <button data-number class="btn btn__number">1</button>
+        <button data-number class="btn btn__number">2</button>
+        <button data-number class="btn btn__number">3</button>
+        <button data-equals class="btn btn__special btn__operation btn__equal">=</button>
 
         <!-- Fifth row -->
-        <div class="btn btn__number btn__zero">0</div>
-        <div class="btn btn__special btn__operation">.</div>
+        <button data-number class="btn btn__number btn__zero">0</button>
+        <button data-number class="btn btn__special btn__operation">.</button>
       </div>
 
 
